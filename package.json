@@ -1,0 +1,39 @@
+{
+  "name": "DILSHAN-MINI",
+  "description": "DILSHAN-MINI WhatsApp Bot powered by Meta AI. Lightweight webhook bot for Meta WhatsApp Cloud API.",
+  "repository": "https://github.com/yourusername/DILSHAN-MINI",
+  "logo": "https://i.imgur.com/8Km9tLL.png",
+  "keywords": ["whatsapp", "bot", "meta-ai", "dilshan-mini", "webhook"],
+  "env": {
+    "BOT_NAME": {
+      "description": "Bot display name",
+      "value": "DILSHAN-MINI"
+    },
+    "VERIFY_TOKEN": {
+      "description": "Webhook verify token - Meta එකේ දාන්න ඕන token එක",
+      "value": "DILSHAN_MINI_TOKEN"
+    },
+    "PAGE_ACCESS_TOKEN": {
+      "description": "Meta WhatsApp Cloud API access token",
+      "value": ""
+    },
+    "PHONE_NUMBER_ID": {
+      "description": "WhatsApp phone number ID from Meta",
+      "value": ""
+    },
+    "PORT": {
+      "description": "Port for server",
+      "value": "3000"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {"url": "heroku/nodejs"}
+  ],
+  "stack": "heroku-22"
+}
